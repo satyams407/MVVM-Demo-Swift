@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */; };
+		ACBDB3F8218C1F9C0024D719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F7218C1F9C0024D719 /* ViewController.swift */; };
+		ACBDB3FB218C1F9C0024D719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB3F9218C1F9C0024D719 /* Main.storyboard */; };
+		ACBDB3FE218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3FC218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld */; };
+		ACBDB400218C1F9E0024D719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */; };
+		ACBDB403218C1F9E0024D719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */; };
+		ACBDB40E218C1F9E0024D719 /* MutualMobileOnSIteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBDB40A218C1F9E0024D719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBDB3EA218C1F9B0024D719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBDB3F1218C1F9C0024D719;
+			remoteInfo = MutualMobileOnSIte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACBDB3F2218C1F9C0024D719 /* MutualMobileOnSIte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutualMobileOnSIte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBDB3F7218C1F9C0024D719 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACBDB3FA218C1F9C0024D719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACBDB3FD218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MutualMobileOnSIte.xcdatamodel; sourceTree = "<group>"; };
+		ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBDB402218C1F9E0024D719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACBDB404218C1F9E0024D719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBDB409218C1F9E0024D719 /* MutualMobileOnSIteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutualMobileOnSIteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutualMobileOnSIteTests.swift; sourceTree = "<group>"; };
+		ACBDB40F218C1F9E0024D719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBDB3EF218C1F9C0024D719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDB406218C1F9E0024D719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACBDB3E9218C1F9B0024D719 = {
+			isa = PBXGroup;
+			children = (
+				ACBDB3F4218C1F9C0024D719 /* MutualMobileOnSIte */,
+				ACBDB40C218C1F9E0024D719 /* MutualMobileOnSIteTests */,
+				ACBDB3F3218C1F9C0024D719 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBDB3F3218C1F9C0024D719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDB3F2218C1F9C0024D719 /* MutualMobileOnSIte.app */,
+				ACBDB409218C1F9E0024D719 /* MutualMobileOnSIteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBDB3F4218C1F9C0024D719 /* MutualMobileOnSIte */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */,
+				ACBDB3F7218C1F9C0024D719 /* ViewController.swift */,
+				ACBDB3F9218C1F9C0024D719 /* Main.storyboard */,
+				ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */,
+				ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */,
+				ACBDB404218C1F9E0024D719 /* Info.plist */,
+				ACBDB3FC218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld */,
+			);
+			path = MutualMobileOnSIte;
+			sourceTree = "<group>";
+		};
+		ACBDB40C218C1F9E0024D719 /* MutualMobileOnSIteTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */,
+				ACBDB40F218C1F9E0024D719 /* Info.plist */,
+			);
+			path = MutualMobileOnSIteTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBDB3F1218C1F9C0024D719 /* MutualMobileOnSIte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDB412218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIte" */;
+			buildPhases = (
+				ACBDB3EE218C1F9C0024D719 /* Sources */,
+				ACBDB3EF218C1F9C0024D719 /* Frameworks */,
+				ACBDB3F0218C1F9C0024D719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MutualMobileOnSIte;
+			productName = MutualMobileOnSIte;
+			productReference = ACBDB3F2218C1F9C0024D719 /* MutualMobileOnSIte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBDB408218C1F9E0024D719 /* MutualMobileOnSIteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDB415218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIteTests" */;
+			buildPhases = (
+				ACBDB405218C1F9E0024D719 /* Sources */,
+				ACBDB406218C1F9E0024D719 /* Frameworks */,
+				ACBDB407218C1F9E0024D719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBDB40B218C1F9E0024D719 /* PBXTargetDependency */,
+			);
+			name = MutualMobileOnSIteTests;
+			productName = MutualMobileOnSIteTests;
+			productReference = ACBDB409218C1F9E0024D719 /* MutualMobileOnSIteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBDB3EA218C1F9B0024D719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Satyam Sehgal";
+				TargetAttributes = {
+					ACBDB3F1218C1F9C0024D719 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					ACBDB408218C1F9E0024D719 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = ACBDB3F1218C1F9C0024D719;
+					};
+				};
+			};
+			buildConfigurationList = ACBDB3ED218C1F9B0024D719 /* Build configuration list for PBXProject "MutualMobileOnSIte" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBDB3E9218C1F9B0024D719;
+			productRefGroup = ACBDB3F3218C1F9C0024D719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBDB3F1218C1F9C0024D719 /* MutualMobileOnSIte */,
+				ACBDB408218C1F9E0024D719 /* MutualMobileOnSIteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBDB3F0218C1F9C0024D719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDB403218C1F9E0024D719 /* LaunchScreen.storyboard in Resources */,
+				ACBDB400218C1F9E0024D719 /* Assets.xcassets in Resources */,
+				ACBDB3FB218C1F9C0024D719 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDB407218C1F9E0024D719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBDB3EE218C1F9C0024D719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDB3F8218C1F9C0024D719 /* ViewController.swift in Sources */,
+				ACBDB3FE218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld in Sources */,
+				ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDB405218C1F9E0024D719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDB40E218C1F9E0024D719 /* MutualMobileOnSIteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBDB40B218C1F9E0024D719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBDB3F1218C1F9C0024D719 /* MutualMobileOnSIte */;
+			targetProxy = ACBDB40A218C1F9E0024D719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBDB3F9218C1F9C0024D719 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDB3FA218C1F9C0024D719 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDB402218C1F9E0024D719 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBDB410218C1F9E0024D719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBDB411218C1F9E0024D719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBDB413218C1F9E0024D719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV636QFZ5Q;
+				INFOPLIST_FILE = MutualMobileOnSIte/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyam.MutualMobileOnSIte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBDB414218C1F9E0024D719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV636QFZ5Q;
+				INFOPLIST_FILE = MutualMobileOnSIte/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyam.MutualMobileOnSIte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBDB416218C1F9E0024D719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV636QFZ5Q;
+				INFOPLIST_FILE = MutualMobileOnSIteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyam.MutualMobileOnSIteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutualMobileOnSIte.app/MutualMobileOnSIte";
+			};
+			name = Debug;
+		};
+		ACBDB417218C1F9E0024D719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DV636QFZ5Q;
+				INFOPLIST_FILE = MutualMobileOnSIteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyam.MutualMobileOnSIteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MutualMobileOnSIte.app/MutualMobileOnSIte";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBDB3ED218C1F9B0024D719 /* Build configuration list for PBXProject "MutualMobileOnSIte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDB410218C1F9E0024D719 /* Debug */,
+				ACBDB411218C1F9E0024D719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBDB412218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDB413218C1F9E0024D719 /* Debug */,
+				ACBDB414218C1F9E0024D719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBDB415218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDB416218C1F9E0024D719 /* Debug */,
+				ACBDB417218C1F9E0024D719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACBDB3FC218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACBDB3FD218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodel */,
+			);
+			currentVersion = ACBDB3FD218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodel */;
+			path = MutualMobileOnSIte.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACBDB3EA218C1F9B0024D719 /* Project object */;
+}
