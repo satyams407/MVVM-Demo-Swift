@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BC930D19571AD3B748AFBD9 /* Pods_MutualMobileOnSIte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 594356AD0C0E9F09545C1EDC /* Pods_MutualMobileOnSIte.framework */; };
+		6BCB16C368C5E23127D26497 /* Pods_MutualMobileOnSIteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08671BA4AF632D5B3CA86CA8 /* Pods_MutualMobileOnSIteTests.framework */; };
+		AC89A367218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A366218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift */; };
+		AC89A369218C3C57006CD4E9 /* PhotoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A368218C3C57006CD4E9 /* PhotoCellModel.swift */; };
+		AC89A36C218C3C83006CD4E9 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A36B218C3C83006CD4E9 /* LandingViewModel.swift */; };
+		AC89A36E218C3DDB006CD4E9 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A36D218C3DDB006CD4E9 /* StringConstants.swift */; };
+		AC89A370218C3EBC006CD4E9 /* FetchPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A36F218C3EBC006CD4E9 /* FetchPhotoService.swift */; };
+		AC89A376218C6FEC006CD4E9 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A375218C6FEC006CD4E9 /* ImageDetailViewController.swift */; };
+		AC89A378218C840E006CD4E9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A377218C840E006CD4E9 /* AppError.swift */; };
+		AC89A37A218C854B006CD4E9 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A379218C854B006CD4E9 /* AppUtility.swift */; };
 		ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */; };
-		ACBDB3F8218C1F9C0024D719 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F7218C1F9C0024D719 /* ViewController.swift */; };
+		ACBDB3F8218C1F9C0024D719 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F7218C1F9C0024D719 /* LandingViewController.swift */; };
 		ACBDB3FB218C1F9C0024D719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB3F9218C1F9C0024D719 /* Main.storyboard */; };
 		ACBDB3FE218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3FC218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld */; };
 		ACBDB400218C1F9E0024D719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */; };
 		ACBDB403218C1F9E0024D719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */; };
 		ACBDB40E218C1F9E0024D719 /* MutualMobileOnSIteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */; };
+		ACBDB420218C2EC70024D719 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */; };
+		ACBDB422218C2F050024D719 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB421218C2F050024D719 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A95F9EF649557B0F614025 /* Pods-MutualMobileOnSIteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutualMobileOnSIteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MutualMobileOnSIteTests/Pods-MutualMobileOnSIteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08671BA4AF632D5B3CA86CA8 /* Pods_MutualMobileOnSIteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MutualMobileOnSIteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370A2D2EBBB4AEEEA2586DE6 /* Pods-MutualMobileOnSIteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutualMobileOnSIteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MutualMobileOnSIteTests/Pods-MutualMobileOnSIteTests.release.xcconfig"; sourceTree = "<group>"; };
+		594356AD0C0E9F09545C1EDC /* Pods_MutualMobileOnSIte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MutualMobileOnSIte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BFC38738AFAC8E7C03DA229 /* Pods-MutualMobileOnSIte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutualMobileOnSIte.release.xcconfig"; path = "Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte.release.xcconfig"; sourceTree = "<group>"; };
+		AC89A366218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC89A368218C3C57006CD4E9 /* PhotoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCellModel.swift; sourceTree = "<group>"; };
+		AC89A36B218C3C83006CD4E9 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		AC89A36D218C3DDB006CD4E9 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		AC89A36F218C3EBC006CD4E9 /* FetchPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoService.swift; sourceTree = "<group>"; };
+		AC89A375218C6FEC006CD4E9 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		AC89A377218C840E006CD4E9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		AC89A379218C854B006CD4E9 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		ACBDB3F2218C1F9C0024D719 /* MutualMobileOnSIte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutualMobileOnSIte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACBDB3F7218C1F9C0024D719 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACBDB3F7218C1F9C0024D719 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		ACBDB3FA218C1F9C0024D719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACBDB3FD218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MutualMobileOnSIte.xcdatamodel; sourceTree = "<group>"; };
 		ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +63,9 @@
 		ACBDB409218C1F9E0024D719 /* MutualMobileOnSIteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutualMobileOnSIteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutualMobileOnSIteTests.swift; sourceTree = "<group>"; };
 		ACBDB40F218C1F9E0024D719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		ACBDB421218C2F050024D719 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DF80E403C2F1BC51C06F22E8 /* Pods-MutualMobileOnSIte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutualMobileOnSIte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC930D19571AD3B748AFBD9 /* Pods_MutualMobileOnSIte.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +81,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BCB16C368C5E23127D26497 /* Pods_MutualMobileOnSIteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C1C0B34A467268BE748E34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF80E403C2F1BC51C06F22E8 /* Pods-MutualMobileOnSIte.debug.xcconfig */,
+				8BFC38738AFAC8E7C03DA229 /* Pods-MutualMobileOnSIte.release.xcconfig */,
+				02A95F9EF649557B0F614025 /* Pods-MutualMobileOnSIteTests.debug.xcconfig */,
+				370A2D2EBBB4AEEEA2586DE6 /* Pods-MutualMobileOnSIteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		458B52F887D0E6AC4C2D20F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				594356AD0C0E9F09545C1EDC /* Pods_MutualMobileOnSIte.framework */,
+				08671BA4AF632D5B3CA86CA8 /* Pods_MutualMobileOnSIteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC89A36A218C3C5D006CD4E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AC89A36B218C3C83006CD4E9 /* LandingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		ACBDB3E9218C1F9B0024D719 = {
 			isa = PBXGroup;
 			children = (
 				ACBDB3F4218C1F9C0024D719 /* MutualMobileOnSIte */,
 				ACBDB40C218C1F9E0024D719 /* MutualMobileOnSIteTests */,
 				ACBDB3F3218C1F9C0024D719 /* Products */,
+				07C1C0B34A467268BE748E34 /* Pods */,
+				458B52F887D0E6AC4C2D20F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +139,10 @@
 		ACBDB3F4218C1F9C0024D719 /* MutualMobileOnSIte */ = {
 			isa = PBXGroup;
 			children = (
+				ACBDB41A218C1FBF0024D719 /* Core */,
+				ACBDB419218C1FAE0024D719 /* Presentation Layer */,
+				ACBDB418218C1FAA0024D719 /* Network Layer */,
 				ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */,
-				ACBDB3F7218C1F9C0024D719 /* ViewController.swift */,
 				ACBDB3F9218C1F9C0024D719 /* Main.storyboard */,
 				ACBDB3FF218C1F9E0024D719 /* Assets.xcassets */,
 				ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */,
@@ -99,6 +161,62 @@
 			path = MutualMobileOnSIteTests;
 			sourceTree = "<group>";
 		};
+		ACBDB418218C1FAA0024D719 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AC89A36F218C3EBC006CD4E9 /* FetchPhotoService.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		ACBDB419218C1FAE0024D719 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AC89A36A218C3C5D006CD4E9 /* ViewModels */,
+				ACBDB41E218C1FF80024D719 /* Cell Models */,
+				ACBDB41D218C1FF00024D719 /* Cells */,
+				ACBDB41C218C1FE60024D719 /* View Controllers */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		ACBDB41A218C1FBF0024D719 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */,
+				ACBDB421218C2F050024D719 /* UIImageExtension.swift */,
+				AC89A36D218C3DDB006CD4E9 /* StringConstants.swift */,
+				AC89A377218C840E006CD4E9 /* AppError.swift */,
+				AC89A379218C854B006CD4E9 /* AppUtility.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACBDB41C218C1FE60024D719 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDB3F7218C1F9C0024D719 /* LandingViewController.swift */,
+				AC89A375218C6FEC006CD4E9 /* ImageDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ACBDB41D218C1FF00024D719 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC89A366218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ACBDB41E218C1FF80024D719 /* Cell Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC89A368218C3C57006CD4E9 /* PhotoCellModel.swift */,
+			);
+			path = "Cell Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBDB412218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIte" */;
 			buildPhases = (
+				04E510F7DE05C5BCC5DB64F2 /* [CP] Check Pods Manifest.lock */,
 				ACBDB3EE218C1F9C0024D719 /* Sources */,
 				ACBDB3EF218C1F9C0024D719 /* Frameworks */,
 				ACBDB3F0218C1F9C0024D719 /* Resources */,
+				52CDFB2969646EA6973A7CB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBDB415218C1F9E0024D719 /* Build configuration list for PBXNativeTarget "MutualMobileOnSIteTests" */;
 			buildPhases = (
+				37AD951D952278509D22CC5C /* [CP] Check Pods Manifest.lock */,
 				ACBDB405218C1F9E0024D719 /* Sources */,
 				ACBDB406218C1F9E0024D719 /* Frameworks */,
 				ACBDB407218C1F9E0024D719 /* Resources */,
@@ -195,14 +316,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04E510F7DE05C5BCC5DB64F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MutualMobileOnSIte-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37AD951D952278509D22CC5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MutualMobileOnSIteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52CDFB2969646EA6973A7CB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACBDB3EE218C1F9C0024D719 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACBDB3F8218C1F9C0024D719 /* ViewController.swift in Sources */,
+				ACBDB3F8218C1F9C0024D719 /* LandingViewController.swift in Sources */,
+				AC89A370218C3EBC006CD4E9 /* FetchPhotoService.swift in Sources */,
+				AC89A376218C6FEC006CD4E9 /* ImageDetailViewController.swift in Sources */,
 				ACBDB3FE218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld in Sources */,
+				AC89A36E218C3DDB006CD4E9 /* StringConstants.swift in Sources */,
+				AC89A36C218C3C83006CD4E9 /* LandingViewModel.swift in Sources */,
+				AC89A369218C3C57006CD4E9 /* PhotoCellModel.swift in Sources */,
+				ACBDB420218C2EC70024D719 /* UIImageViewExtension.swift in Sources */,
+				AC89A378218C840E006CD4E9 /* AppError.swift in Sources */,
+				AC89A37A218C854B006CD4E9 /* AppUtility.swift in Sources */,
+				ACBDB422218C2F050024D719 /* UIImageExtension.swift in Sources */,
 				ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */,
+				AC89A367218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +562,7 @@
 		};
 		ACBDB413218C1F9E0024D719 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF80E403C2F1BC51C06F22E8 /* Pods-MutualMobileOnSIte.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +581,7 @@
 		};
 		ACBDB414218C1F9E0024D719 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFC38738AFAC8E7C03DA229 /* Pods-MutualMobileOnSIte.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +600,7 @@
 		};
 		ACBDB416218C1F9E0024D719 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A95F9EF649557B0F614025 /* Pods-MutualMobileOnSIteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +622,7 @@
 		};
 		ACBDB417218C1F9E0024D719 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 370A2D2EBBB4AEEEA2586DE6 /* Pods-MutualMobileOnSIteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
