@@ -11,21 +11,21 @@ import UIKit
 class ImageDetailViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageTitle: UILabel!
 
     var imageURL: String? = StringConstants.emptyString
+    var imageLabelText: String? = StringConstants.emptyString
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
         screenSetup()
     }
 
     func screenSetup() {
         if imageURL != "" {
-        imageView.downloadFromLink(link: imageURL!, contentMode: .scaleToFill)
+            imageView.downloadFromLink(link: imageURL!, contentMode: .scaleToFill)
         }
+        imageTitle.text = imageLabelText
     }
 
     @IBAction func scaleImage(_ sender: UIPinchGestureRecognizer) {

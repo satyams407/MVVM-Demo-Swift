@@ -13,19 +13,10 @@ class PhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet private weak var imageView : UIImageView!
     @IBOutlet private weak var title: UILabel!
-    let defaultBackgroundColor = UIColor.groupTableViewBackground
 
     func updateCell(with cellModel: PhotoCellModel) {
         // lazy loading
-        self.imageView.downloadFromLink(link: cellModel.imageURL ?? "", contentMode: .scaleToFill)
+        self.imageView.downloadFromLink(link: cellModel.imageURL , contentMode: .scaleToFill)
         self.title.text = cellModel.title
-       // setOpaqueBackground() //will
     }
-// XIB setup
-//    func setOpaqueBackground() {
-//        self.alpha = 1.0
-//        self.backgroundColor = defaultBackgroundColor
-//        imageView.alpha = 1.0
-//        imageView.backgroundColor = defaultBackgroundColor
-//    }
 }

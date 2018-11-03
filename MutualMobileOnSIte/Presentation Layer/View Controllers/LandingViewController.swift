@@ -8,27 +8,30 @@
 
 
 import UIKit
+import SwiftyJSON
 
 class LandingViewController: UIViewController {
 
-    let itemsPerRow: CGFloat = 3
-    let sectionInsets = UIEdgeInsets.init(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-    let landingViewModel = LandingViewModel()
-    var dataSource = [PhotoCellModel]()
-//private outlest
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-    @IBOutlet weak var photoCollectionView: UICollectionView!
+    @IBOutlet weak private var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak private var segmentControl: UISegmentedControl!
+    @IBOutlet weak private var photoCollectionView: UICollectionView!
+    @IBOutlet weak var noDataAvailableLabel: UILabel!
 
-    @IBAction func segmentControlAction(_ sender: Any) {
-        photoCollectionView.reloadData()
+    var totalPhotos: Int = 0 {
+        didSet {
+            self.noDataAvailableLabel?.text = totalPhotos > 0 ? "\(totalPhotos) \(StringConstants.totalPhotosAvailable)" : StringConstants.noPhotosAvailable
+        }
     }
+    var dataSource = [PhotoCellModel]()
+    let fetchPhotoService = FetchPhotoService()
+
+    let itemsPerRow: CGFloat = 3.0
+    let sectionInsets = UIEdgeInsets.init(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicatorView.isHidden = false
-        fetchAllPhotos()
         screenSetup()
+        fetchAllPhotos()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,23 +45,35 @@ class LandingViewController: UIViewController {
 
     func screenSetup() {
        segmentControl.selectedSegmentIndex = 0 // intially gridlayout is selected
+       navigationController?.navigationBar.topItem?.title = StringConstants.landingNavigationBarTitle
+       photoCollectionView.isHidden = true
     }
 
-    func fetchAllPhotos() {
-        landingViewModel.fetchPhotos(completion: { (dataSourceArray, error) in
-            guard let data = dataSourceArray else {
-                AppUtility.showAlert(message: error?.message ?? StringConstants.emptyString, onController: self)
-                self.activityIndicatorView.stopAnimating()
-                return
-            }
-            self.dataSource = data
-            DispatchQueue.main.async {
-                self.photoCollectionView.reloadData()
-            }
-        })
+    fileprivate func fetchAllPhotos() {
+        guard let url = K.Url.feedURL else {
+            return
+        }
 
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        fetchPhotoService.fetchPhoto(withURL: url) { (result) in
+            switch (result) {
+            case .failure(let error):
+                AppUtility.showAlert(message: error.errorMessage, onController: self)
+
+            case .success(let json):
+                var landingModels: [LandingViewModel] = []
+                let photos = json.arrayValue
+                for photo in photos {
+                    if let model =  LandingViewModel(json: photo) {
+                        landingModels.append(model)
+                        self.dataSource.append(PhotoCellModel.init(viewModel: model))
+                    }
+                }
+            }
+
+            self.totalPhotos = self.dataSource.count
             DispatchQueue.main.async {
+                self.photoCollectionView.isHidden = false
+                self.photoCollectionView.reloadData()
                 self.activityIndicatorView.stopAnimating()
             }
         }
@@ -69,8 +84,13 @@ class LandingViewController: UIViewController {
             let destinationVC = segue.destination as? ImageDetailViewController
             if let indexPath = sender as? IndexPath {
                 destinationVC?.imageURL = self.dataSource[indexPath.row].imageURL
+                destinationVC?.imageLabelText = self.dataSource[indexPath.row].title
             }
         }
+    }
+
+    @IBAction func segmentControlAction(_ sender: Any) {
+        photoCollectionView.reloadData()
     }
 }
 
@@ -88,7 +108,6 @@ extension LandingViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: StringConstants.photoCellIdentifier, for: indexPath)
         if let cell = collectionCell as? PhotoCollectionViewCell {
-            // code to configure the cell
            cell.updateCell(with: self.dataSource[indexPath.row])
         }
         return collectionCell
@@ -96,17 +115,12 @@ extension LandingViewController: UICollectionViewDelegate, UICollectionViewDataS
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // perform segue here
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        if let detailVC = storyBoard.instantiateViewController(withIdentifier: "ImageDetailViewController") as? ImageDetailViewController {
+        let storyBoard = UIStoryboard.init(name: StringConstants.MainStoryBoard, bundle: nil)
+        if let detailVC = storyBoard.instantiateViewController(withIdentifier: StringConstants.imageVC ) as? ImageDetailViewController {
             detailVC.imageURL = dataSource[indexPath.row].imageURL
+            detailVC.imageLabelText = dataSource[indexPath.row].title
         }
         self.performSegue(withIdentifier: StringConstants.imageDetailSegue , sender: indexPath)
-    }
-
-    // MARK: Paging support
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -114,24 +128,20 @@ extension LandingViewController: UICollectionViewDelegate, UICollectionViewDataS
         var widthPerItem  = CGSize.init(width: view.frame.width, height: 50)
 
         switch segmentControl.selectedSegmentIndex {
-        case 0 :
-            // set size according to the grid
-            let paddingSpace = sectionInsets.left * (itemsPerRow * 2.5)
-            let availbleWidth = view.frame.width - paddingSpace
-            widthPerItem = CGSize.init(width: availbleWidth/itemsPerRow, height: availbleWidth/itemsPerRow)
-
-        case 1:
+        case 0:
             //set size accoridng to the list
             let sizeOfCell = view.frame.width - sectionInsets.left
             widthPerItem =  CGSize.init(width: sizeOfCell, height: sizeOfCell)
-        default : break
+        case 1 :
+            // set size according to the grid
+            let paddingSpace = sectionInsets.left * (itemsPerRow * 2)
+            let availbleWidth = view.frame.width - paddingSpace
+            let height = (availbleWidth/itemsPerRow)
+            widthPerItem = CGSize.init(width: availbleWidth/itemsPerRow, height: height)
+
+
+        default: break
         }
         return widthPerItem
     }
-
 }
-
-//extension LandingViewController : AlertPresentable {
-//
-//}
-

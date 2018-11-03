@@ -5,33 +5,37 @@
 //  Created by Satyam Sehgal on 02/11/18.
 //  Copyright © 2018 Satyam Sehgal. All rights reserved.
 //
-// TODO: use network protocols 
+//
 import Foundation
 import UIKit
+import SwiftyJSON
 
-class FetchPhotoService {
-
-    private var url = URL.init(string: "https://jsonplaceholder.typicode.com/photos")  // can put this appURLconstants file , remove hard coding
-
-    func fetchPhoto(completion: @escaping (Data?, AppError?) -> Void) {
-        URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
-            guard let data = data else {
-                completion(nil, AppError.init(with: AppError.ErrorType.fetchError))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
-                completion(nil, AppError.init(with: AppError.ErrorType.fetchError, message: "cannot fetch"))
-                return
-            }
-            completion(data, nil)
-        }).resume()
-    }
+enum NetworkResult {
+    case success(JSON)
+    case failure(NetworkError)
 }
 
-/*
- let task = session.dataTask(with: url!, completionHandler: { (data, response, error) in
- completion(200, data)
- })
- task.resume()
- */
+class FetchPhotoService: FetchFeedServiceProtocol {
+
+    func fetchPhoto(withURL url: URL, completionHandler:@escaping (NetworkResult) -> Void) {
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else {
+                DispatchQueue.main.async {
+                    completionHandler(NetworkResult.failure(NetworkError.fetchError))
+                }
+                return
+            }
+            do {
+                let json = try JSON(data: data)
+                DispatchQueue.main.async {
+                    completionHandler(NetworkResult.success(json))
+                }
+            }
+            catch( _) {
+                DispatchQueue.main.async {
+                    completionHandler(NetworkResult.failure(NetworkError.networkError))
+                }
+            }
+            }.resume()
+    }
+}

@@ -9,18 +9,12 @@
 import Foundation
 import UIKit
 
-struct PhotoCellModel {
+struct PhotoCellModel: PhotoDisplayableProtocol {    
     var imageURL: String
     var title: String
-    var albumId: Int
-    var id: Int
-    var thumbnailUrl: String
 
-    init(imageURL: String, title: String, id: Int, albumId: Int, thumbnailUrl: String) {
-        self.imageURL = imageURL
-        self.title = title
-        self.albumId = albumId
-        self.id = id
-        self.thumbnailUrl = thumbnailUrl
+    init(viewModel: LandingViewModel) {
+        self.imageURL = viewModel.url
+        self.title = viewModel.title
     }
 }
