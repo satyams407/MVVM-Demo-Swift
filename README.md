@@ -18,17 +18,25 @@ Asynchronously downloaded the images (lazy loading) for smooth scrolling
 
 
 2. UI Part - 
- a.) Added launch screen.
- b.) Used Collection view to show photos and its title. 
- c.) Created a segment to switch in between the grid and list layouts.
- d.) Showed alert messages when the user is in offline mode or unable to fetch the data.
- e.) Work for all the screen sizes of iPad and iPhone
+
+    a.) Added launch screen.
+ 
+    b.) Used Collection view to show photos and its title. 
+ 
+    c.) Created a segment to switch in between the grid and list layouts.
+ 
+    d.) Showed alert messages when the user is in offline mode or unable to fetch the data.
+ 
+    e.) Work for all the screen sizes of iPad and iPhone
 
 
  3.  Unit Testing 
     Tested the service class and landing view model class
+       
        testFetchPhotoServiceSuccess()
+       
        testFetchPhotoServiceFailure()
+       
        testModelIntialisation()
 
 
