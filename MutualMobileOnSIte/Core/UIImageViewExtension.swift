@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    // try catch
     func downloadFromLink(link: String, contentMode: UIView.ContentMode) {
-        URLSession.shared.dataTask(with: URL(string: link)! as URL, completionHandler: { (data, response, error) -> Void in
+        guard let url = URL(string: link) else {
+            return
+        }
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
             DispatchQueue.main.async {
                 self.contentMode = contentMode
                 if let data = data {

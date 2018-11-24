@@ -8,29 +8,14 @@
 
 import Foundation
 
-class AppError: Error {
-    private var errorType: ErrorType
-    private var originalMessage: String?
-    var errorCode: String?
+enum NetworkError {
+    case networkError
+    case fetchError
 
-    internal enum ErrorType {
-        case networkError
-        case fetchError
-    }
-
-    var message: String? {
-        var errorString: String
-        switch errorType {
-        case .networkError:
-            errorString = "Currently, Network is not available"
-        case .fetchError:
-            errorString = "Unable to fetch the data"
+    var errorMessage: String {
+        switch self {
+        case .networkError: return "Something went wrong!"
+        case .fetchError: return "Unable to Fetch!"
         }
-        return errorString
-    }
-
-    required init(with errorType: ErrorType, message: String? = nil) {
-        self.errorType = errorType
-        self.originalMessage = message
     }
 }

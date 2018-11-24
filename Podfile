@@ -7,6 +7,7 @@ target 'MutualMobileOnSIte' do
 
   # Pods for MutualMobileOnSIte
   pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'MutualMobileOnSIteTests' do
     inherit! :search_paths

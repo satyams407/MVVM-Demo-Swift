@@ -10,7 +10,18 @@ import Foundation
 
 class StringConstants {
 
-    static let photoCellIdentifier = "photoCellIdentifier"
-    static let imageDetailSegue = "showImage"
     static let emptyString = ""
+    static let okButtonTitle = "Ok"
+    static let imageNavigationBarTitle = "Photo"
+    static let landingNavigationBarTitle = "MM Photos"
+
+    static let totalPhotosAvailable = "Photos available"
+    static let noPhotosAvailable = "No photos available"
+
+    static let MainStoryBoard = "Main"
+
+    static let photoCellIdentifier = "photoCellIdentifier"
+    static let imageVC = "ImageDetailViewController"
+    
+    static let imageDetailSegue = "showImage"
 }

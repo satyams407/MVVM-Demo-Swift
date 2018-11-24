@@ -17,6 +17,11 @@
 		AC89A376218C6FEC006CD4E9 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A375218C6FEC006CD4E9 /* ImageDetailViewController.swift */; };
 		AC89A378218C840E006CD4E9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A377218C840E006CD4E9 /* AppError.swift */; };
 		AC89A37A218C854B006CD4E9 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A379218C854B006CD4E9 /* AppUtility.swift */; };
+		AC89A37C218D8C2C006CD4E9 /* AppURLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A37B218D8C2C006CD4E9 /* AppURLConstants.swift */; };
+		AC89A37E218DA055006CD4E9 /* FetchFeedServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A37D218DA054006CD4E9 /* FetchFeedServiceProtocol.swift */; };
+		AC89A382218DBE88006CD4E9 /* PhotoDisplayableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A381218DBE88006CD4E9 /* PhotoDisplayableProtocol.swift */; };
+		AC89A386218DCD80006CD4E9 /* FetchPhotoServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A385218DCD80006CD4E9 /* FetchPhotoServiceTest.swift */; };
+		AC89A388218DCE67006CD4E9 /* LandingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89A387218DCE67006CD4E9 /* LandingViewModelTest.swift */; };
 		ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */; };
 		ACBDB3F8218C1F9C0024D719 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB3F7218C1F9C0024D719 /* LandingViewController.swift */; };
 		ACBDB3FB218C1F9C0024D719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB3F9218C1F9C0024D719 /* Main.storyboard */; };
@@ -25,7 +30,6 @@
 		ACBDB403218C1F9E0024D719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDB401218C1F9E0024D719 /* LaunchScreen.storyboard */; };
 		ACBDB40E218C1F9E0024D719 /* MutualMobileOnSIteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */; };
 		ACBDB420218C2EC70024D719 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */; };
-		ACBDB422218C2F050024D719 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDB421218C2F050024D719 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		AC89A375218C6FEC006CD4E9 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		AC89A377218C840E006CD4E9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		AC89A379218C854B006CD4E9 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		AC89A37B218D8C2C006CD4E9 /* AppURLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURLConstants.swift; sourceTree = "<group>"; };
+		AC89A37D218DA054006CD4E9 /* FetchFeedServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFeedServiceProtocol.swift; sourceTree = "<group>"; };
+		AC89A381218DBE88006CD4E9 /* PhotoDisplayableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayableProtocol.swift; sourceTree = "<group>"; };
+		AC89A385218DCD80006CD4E9 /* FetchPhotoServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoServiceTest.swift; sourceTree = "<group>"; };
+		AC89A387218DCE67006CD4E9 /* LandingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModelTest.swift; sourceTree = "<group>"; };
 		ACBDB3F2218C1F9C0024D719 /* MutualMobileOnSIte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutualMobileOnSIte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBDB3F5218C1F9C0024D719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBDB3F7218C1F9C0024D719 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +73,6 @@
 		ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutualMobileOnSIteTests.swift; sourceTree = "<group>"; };
 		ACBDB40F218C1F9E0024D719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
-		ACBDB421218C2F050024D719 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		DF80E403C2F1BC51C06F22E8 /* Pods-MutualMobileOnSIte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MutualMobileOnSIte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +165,8 @@
 			children = (
 				ACBDB40D218C1F9E0024D719 /* MutualMobileOnSIteTests.swift */,
 				ACBDB40F218C1F9E0024D719 /* Info.plist */,
+				AC89A385218DCD80006CD4E9 /* FetchPhotoServiceTest.swift */,
+				AC89A387218DCE67006CD4E9 /* LandingViewModelTest.swift */,
 			);
 			path = MutualMobileOnSIteTests;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				AC89A36F218C3EBC006CD4E9 /* FetchPhotoService.swift */,
+				AC89A37D218DA054006CD4E9 /* FetchFeedServiceProtocol.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -184,10 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				ACBDB41F218C2EC70024D719 /* UIImageViewExtension.swift */,
-				ACBDB421218C2F050024D719 /* UIImageExtension.swift */,
 				AC89A36D218C3DDB006CD4E9 /* StringConstants.swift */,
 				AC89A377218C840E006CD4E9 /* AppError.swift */,
 				AC89A379218C854B006CD4E9 /* AppUtility.swift */,
+				AC89A37B218D8C2C006CD4E9 /* AppURLConstants.swift */,
+				AC89A381218DBE88006CD4E9 /* PhotoDisplayableProtocol.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -371,12 +383,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MutualMobileOnSIte/Pods-MutualMobileOnSIte-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,13 +408,15 @@
 				AC89A370218C3EBC006CD4E9 /* FetchPhotoService.swift in Sources */,
 				AC89A376218C6FEC006CD4E9 /* ImageDetailViewController.swift in Sources */,
 				ACBDB3FE218C1F9C0024D719 /* MutualMobileOnSIte.xcdatamodeld in Sources */,
+				AC89A37E218DA055006CD4E9 /* FetchFeedServiceProtocol.swift in Sources */,
 				AC89A36E218C3DDB006CD4E9 /* StringConstants.swift in Sources */,
 				AC89A36C218C3C83006CD4E9 /* LandingViewModel.swift in Sources */,
 				AC89A369218C3C57006CD4E9 /* PhotoCellModel.swift in Sources */,
 				ACBDB420218C2EC70024D719 /* UIImageViewExtension.swift in Sources */,
 				AC89A378218C840E006CD4E9 /* AppError.swift in Sources */,
+				AC89A37C218D8C2C006CD4E9 /* AppURLConstants.swift in Sources */,
+				AC89A382218DBE88006CD4E9 /* PhotoDisplayableProtocol.swift in Sources */,
 				AC89A37A218C854B006CD4E9 /* AppUtility.swift in Sources */,
-				ACBDB422218C2F050024D719 /* UIImageExtension.swift in Sources */,
 				ACBDB3F6218C1F9C0024D719 /* AppDelegate.swift in Sources */,
 				AC89A367218C3C3F006CD4E9 /* PhotoCollectionViewCell.swift in Sources */,
 			);
@@ -410,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC89A388218DCE67006CD4E9 /* LandingViewModelTest.swift in Sources */,
 				ACBDB40E218C1F9E0024D719 /* MutualMobileOnSIteTests.swift in Sources */,
+				AC89A386218DCD80006CD4E9 /* FetchPhotoServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
