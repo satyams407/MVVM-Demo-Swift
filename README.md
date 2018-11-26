@@ -1,7 +1,5 @@
 # MVVM-Demo-Swift
 MVVM architecture Demo 
-OnSite Coding Test - MutualMobile
-
 
 Problem statement
       Fetch data from "https://jsonplaceholder.typicode.com/photos" and show them in list and grid views
